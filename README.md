@@ -1,6 +1,6 @@
 # Genergy
 
-_NB: You'll need a reasonably high resolution monitor to be able to play the game. This was an oversight from developing mostly on a Retina display, and I intend to publish a fixed version some time on 2017-03-12 as the changes required are trivial_
+_NB: The versions in the `original_release` folder are the ones that were released before the deadline for the 7DRL challenge. The `resolution_fix` versions were released the day after to allow the game to be played on monitors with smaller resolutions._
 
 Genergy is a [roguelike](https://en.wikipedia.org/wiki/Roguelike) developed in under 7 days for the [7DRL challenge](http://7drl.roguetemple.com/jsp/viewGames.jsp#). It was my first entry into 7DRL, and my first "complete" roguelike. It (heavily) uses my ECS library [AshleyCPP](https://github.com/SgtCoDFish/AshleyCPP).
 
@@ -64,6 +64,7 @@ Install cygwin from the [Cygwin website](https://cygwin.com/install.html) (64-bi
 Raise an issue on this repo if you need help and I'll do my best!
 
 ## Hashes
+*NB: THESE HASHES WILL BE UPDATED WHEN RESOLUTION_FIX BINARIES ARE AVAILABLE FOR EACH PLATFORM*
 These hashes (macOS and Linux)  were created before the midnight deadline I set myself on 2017-03-11.
 ```
 sha256sum 7drl/macOS/genergy 7drl/ubuntu16.10/genergy
