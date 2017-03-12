@@ -64,24 +64,20 @@ Install cygwin from the [Cygwin website](https://cygwin.com/install.html) (64-bi
 Raise an issue on this repo if you need help and I'll do my best!
 
 ## Hashes
-*NB: THESE HASHES WILL BE UPDATED WHEN RESOLUTION_FIX BINARIES ARE AVAILABLE FOR EACH PLATFORM*
-These hashes (macOS and Linux)  were created before the midnight deadline I set myself on 2017-03-11.
-```
-sha256sum 7drl/macOS/genergy 7drl/ubuntu16.10/genergy
-87aa60a595e780efe08f47f34934b6600b0dd495ebbf88d950d26d68b9b957d9  7drl/macOS/genergy
-2cc5d2ab1eb4c941f52e9b3f54d7f61a9669de15f5d6acb53e066816e746b980  7drl/ubuntu16.10/genergy
-```
+(A hash history is available in the git commit history. The display here is simplified somewhat for readability)
 
-it was then discovered that I accidentally compiled the ubuntu version with `-march=native` meaning it wouldn't work on a lot of computers. A fixed version was put in place in `ubuntu16.10` and the original was moved, unchanged, to `7drl/ubuntu16.10_NativeArch`:
+Hashes for originals, before the resolution fix:
 
 ```
-bbf2e3ca5912709b7c37c49f8e353d5157743d3e1c8fa5facc7ae9f9d500fe50  7drl/ubuntu16.10/genergy
-2cc5d2ab1eb4c941f52e9b3f54d7f61a9669de15f5d6acb53e066816e746b980  7drl/ubuntu16.10_NativeArch/genergy
+87aa60a595e780efe08f47f34934b6600b0dd495ebbf88d950d26d68b9b957d9  7drl_original/macOS/genergy
+bbf2e3ca5912709b7c37c49f8e353d5157743d3e1c8fa5facc7ae9f9d500fe50  7drl_original/ubuntu16.10/genergy
+2cc5d2ab1eb4c941f52e9b3f54d7f61a9669de15f5d6acb53e066816e746b980  7drl_original/ubuntu16.10_NativeArch/genergy
+dba58e0c059fdbfa9225d2d081857239fb890ff7e8fd33b21a7e5ce42cbec012  7drl_original/win10/genergy_win.zip
 ```
 
-The cygwin hash was created at ~00:02, and the first run of genergy on cygwin was just before midnight. I'm counting that as within the deadline ;)
-
+Hashes for resolution fixed binaries:
 ```
-$ sha256sum genergy_win.zip
-dba58e0c059fdbfa9225d2d081857239fb890ff7e8fd33b21a7e5ce42cbec012 *genergy_win.zip
+c55844b40a88264a724004c368490da452f57c78802614df0496d3a9891736dc  resolution_fix/macOS/genergy
+f13433b514588e277b31e7daca845ec5f6c9a7fab52f33db8b44e74eccbf3c73  resolution_fix/ubuntu16.10/genergy
+00f966e0aa865651085dea96adca6ba41f0be227452f3b28802bd1d94da335f9  resolution_fix/win10/genergy_win.zip
 ```
