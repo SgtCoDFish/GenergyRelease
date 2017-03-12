@@ -1,6 +1,6 @@
 # Genergy
 
-_NB: The versions in the `original_release` folder are the ones that were released before the deadline for the 7DRL challenge. The `resolution_fix` versions were released the day after to allow the game to be played on monitors with smaller resolutions._
+_NB: The versions in the `7drl_original` folder are the ones that were released before the deadline for the 7DRL challenge. The `resolution_fix` versions were released the day after to allow the game to be played on monitors with smaller resolutions._
 
 Genergy is a [roguelike](https://en.wikipedia.org/wiki/Roguelike) developed in under 7 days for the [7DRL challenge](http://7drl.roguetemple.com/jsp/viewGames.jsp#). It was my first entry into 7DRL, and my first "complete" roguelike. It (heavily) uses my ECS library [AshleyCPP](https://github.com/SgtCoDFish/AshleyCPP).
 
