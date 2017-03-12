@@ -39,7 +39,8 @@ Genergy has been tested to work on Ubuntu 16.04 and Ubuntu 16.10 and runs fine a
 
 That means if the game doesn't run, you probably need to do:
 
-```sudo apt-get install libncurses5
+```
+sudo apt-get install libncurses5
 ```
 
 or something similar, to get ncurses on your system.
