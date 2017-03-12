@@ -68,6 +68,13 @@ sha256sum 7drl/macOS/genergy 7drl/ubuntu16.10/genergy
 2cc5d2ab1eb4c941f52e9b3f54d7f61a9669de15f5d6acb53e066816e746b980  7drl/ubuntu16.10/genergy
 ```
 
+it was then discovered that I accidentally compiled the ubuntu version with `-march=native` meaning it wouldn't work on a lot of computers. A fixed version was put in place in `ubuntu16.10` and the original was moved, unchanged, to `7drl/ubuntu16.10_NativeArch`:
+
+```
+bbf2e3ca5912709b7c37c49f8e353d5157743d3e1c8fa5facc7ae9f9d500fe50  7drl/ubuntu16.10/genergy
+2cc5d2ab1eb4c941f52e9b3f54d7f61a9669de15f5d6acb53e066816e746b980  7drl/ubuntu16.10_NativeArch/genergy
+```
+
 The cygwin hash was created at ~00:02, and the first run of genergy on cygwin was just before midnight. I'm counting that as within the deadline ;)
 
 ```
