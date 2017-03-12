@@ -1,5 +1,5 @@
 # Genergy
-Genergy is a [roguelike](https://en.wikipedia.org/wiki/Roguelike) developed in under 7 days for the [7DRL challenge](http://7drl.roguetemple.com/jsp/viewGames.jsp#). It was my first entry into 7DRL, and my first "complete" roguelike.
+Genergy is a [roguelike](https://en.wikipedia.org/wiki/Roguelike) developed in under 7 days for the [7DRL challenge](http://7drl.roguetemple.com/jsp/viewGames.jsp#). It was my first entry into 7DRL, and my first "complete" roguelike. It (heavily) uses my ECS library [AshleyCPP](https://github.com/SgtCoDFish/AshleyCPP).
 
 There were much grander plans for Genergy than those which ended up in the game for the 7DRL release - the ideas behind the game are, in my opinion, quite strong.
 
@@ -39,7 +39,8 @@ Genergy has been tested to work on Ubuntu 16.04 and Ubuntu 16.10 and runs fine a
 
 That means if the game doesn't run, you probably need to do:
 
-```sudo apt-get install libncurses5```
+```sudo apt-get install libncurses5
+```
 
 or something similar, to get ncurses on your system.
 
@@ -49,15 +50,26 @@ You might run into random segfaults while running the game; this is unfortunatel
 Unfortunately, the game basically doesn't run on Ubuntu 14.04, as the game uses many C++14 features.
 
 ### Windows 10
-Hopefully coming soon!
+ncurses being what it is, support for windows ws always going to be a pain. That said, genergy _does_ run on Windows 10 through Cygwin! It crashes worse than any other platform, but it runs!
+
+If you try and run without going through Cygwin, probably the game will just close straight away and nothing will work. You've been warned!
+
+Install cygwin from the [Cygwin website](https://cygwin.com/install.html) (64-bit required).
 
 ### Problems + Troubleshooting
 Raise an issue on this repo if you need help and I'll do my best!
 
 ## Hashes
-These hashes were created before the midnight deadline I set myself on 2017-03-11.
+These hashes (macOS and Linux)  were created before the midnight deadline I set myself on 2017-03-11.
 ```
 sha256sum 7drl/macOS/genergy 7drl/ubuntu16.10/genergy
 87aa60a595e780efe08f47f34934b6600b0dd495ebbf88d950d26d68b9b957d9  7drl/macOS/genergy
 2cc5d2ab1eb4c941f52e9b3f54d7f61a9669de15f5d6acb53e066816e746b980  7drl/ubuntu16.10/genergy
+```
+
+The cygwin hash was created at ~00:02, and the first run of genergy on cygwin was just before midnight. I'm counting that as within the deadline ;)
+
+```
+$ sha256sum genergy_win.zip
+dba58e0c059fdbfa9225d2d081857239fb890ff7e8fd33b21a7e5ce42cbec012 *genergy_win.zip
 ```
